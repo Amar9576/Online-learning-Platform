@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Learning Platform</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>LearnHub</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#register">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>Welcome to LearnHub</h2>
+    <p>Your journey to knowledge starts here. Explore our courses and enhance your skills!</p>
+  </section>
+
+  <section id="courses">
+    <h2>Available Courses</h2>
+    <div class="course-list">
+      <div class="course-card">
+        <h3>Web Development</h3>
+        <p>Learn HTML, CSS, JavaScript, and more to build modern websites.</p>
+        <button onclick="enroll('Web Development')">Enroll Now</button>
+      </div>
+      <div class="course-card">
+        <h3>Data Science</h3>
+        <p>Master data analysis, visualization, and machine learning.</p>
+        <button onclick="enroll('Data Science')">Enroll Now</button>
+      </div>
+      <div class="course-card">
+        <h3>Digital Marketing</h3>
+        <p>Learn SEO, social media, and online marketing strategies.</p>
+        <button onclick="enroll('Digital Marketing')">Enroll Now</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="register">
+    <h2>Register</h2>
+    <form id="registration-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="course">Select Course:</label>
+      <select id="course" name="course">
+        <option value="Web Development">Web Development</option>
+        <option value="Data Science">Data Science</option>
+        <option value="Digital Marketing">Digital Marketing</option>
+      </select>
+      
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 LearnHub. All Rights Reserved.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
